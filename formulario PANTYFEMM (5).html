@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario FEMMPANTY</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+    }
+    h2, p {
+      text-align: center;
+    }
+    form {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #c2185b;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Formulario FEMMPANTY</h2>
+  <p>Bienvenida a FEMMPANTY 💖<br>
+  Queremos conocer tu experiencia para diseñar soluciones cómodas y efectivas para aliviar el dolor menstrual.</p>
+
+  <form method="POST" action="https://script.google.com/macros/s/AKfycbzFS7fFpeeDmqONDOX6yWGTZzLZ1z8frTA6cKbaGp4v5K71TuIG8jdDEEIAecgqIm7yvg/exec">
+
+    <!-- NUEVAS PREGUNTAS AL INICIO -->
+    <label>¿Cuál es tu edad?</label>
+    <input type="number" name="edad" min="10" max="80" required>
+
+    <label>¿En qué ciudad vives?</label>
+    <input type="text" name="ciudad" required>
+
+    <label>Nombres completos</label>
+    <input type="text" name="nombres" required>
+
+    <!-- PREGUNTAS ANTERIORES -->
+    <label>1. ¿Con qué frecuencia experimentas cólicos menstruales durante tu periodo?</label>
+    <input type="text" name="frecuencia" required>
+
+    <label>2. En una escala del 1 al 10, ¿qué tan intenso es el dolor que sueles sentir?</label>
+    <input type="number" name="intensidad" min="1" max="10" required>
+
+    <label>3. ¿El dolor menstrual interfiere con tus actividades diarias?</label>
+    <select name="interfiere" required>
+      <option value="">Selecciona...</option>
+      <option>Sí, mucho</option>
+      <option>A veces</option>
+      <option>No</option>
+    </select>
+
+    <label>4. ¿Qué métodos utilizas actualmente para aliviar los cólicos?</label>
+    <textarea name="metodos" rows="3"></textarea>
+
+    <label>5. ¿Qué tan efectivos consideras esos métodos que usas?</label>
+    <input type="text" name="efectividad">
+
+    <label>6. ¿Prefieres soluciones naturales, farmacológicas o combinadas?</label>
+    <select name="preferencia">
+      <option value="">Selecciona...</option>
+      <option>Soluciones naturales</option>
+      <option>Farmacológicas</option>
+      <option>Combinadas</option>
+    </select>
+
+    <label>7. Además del dolor, ¿experimentas otros síntomas durante tu periodo?</label>
+    <textarea name="sintomas" rows="3"></textarea>
+
+    <label>8. ¿Qué tan importante es para ti que una solución también brinde comodidad durante el periodo?</label>
+    <input type="text" name="importancia">
+
+    <label>9. ¿Has probado algún producto específico? ¿Cuál ha sido tu experiencia?</label>
+    <textarea name="experiencia" rows="3"></textarea>
+
+    <label>10. Si pudieras diseñar un producto ideal, ¿qué características te gustaría que tuviera?</label>
+    <textarea name="producto_ideal" rows="3"></textarea>
+
+    <button type="submit">Enviar respuestas</button>
+  </form>
+
+</body>
+</html>
